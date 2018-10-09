@@ -17,13 +17,18 @@ def dictionary
 end
 
 def word_substituter(tweet_string)
-  tweet_string = tweet_string.split(/(\W)/).each do |word|
-    dictionary.map do |key, val|
-      # binding.pry
+  words = tweet_string.split(/(\W)/)
+  words = words.map do |word|
+    dictionary.each do |key, val|
+      
       if word == key
         word = val
+        # binding.pry
       end
+    # binding.pry
     end
+    word
   end
-  tweet_string.join
+  binding.pry
+  words.join
 end
