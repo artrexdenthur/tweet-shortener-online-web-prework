@@ -12,7 +12,7 @@ def dictionary
     'be' => 'b',
     'you' => 'u',
     'at' => '@',
-    'and' => '7'
+    'and' => '&'
   }
 end
 
