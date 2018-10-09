@@ -32,3 +32,11 @@ def word_substituter(tweet_string)
   # binding.pry
   words.join
 end
+
+def bulk_tweet_shortener(tweet_array)
+  tweet_array = tweet_array.map do |tweet_string|
+    result = word_substituter(tweet_string)
+    puts result
+  end
+end
+  
