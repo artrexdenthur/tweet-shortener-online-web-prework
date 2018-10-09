@@ -21,7 +21,7 @@ def word_substituter(tweet_string)
   words = words.map do |word|
     dictionary.each do |key, val|
       
-      if word == key
+      if word.downcase == key
         word = val
         # binding.pry
       end
